@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(21, 21, 29);
+}
+
+body {
+    max-width: 100%;
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    padding-left: 3em;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.4px);
+    -webkit-backdrop-filter: blur(5.4px);
+    border-bottom: 1px solid rgba(43, 43, 43, 0.377);
+}
+
+.header-container ul {
+    list-style: none;
+    display: flex;
+    gap: 3em;
+    letter-spacing: 1px;
+}
+
+.header-container li {
+    display: flex;
+    align-items: center;
+    color: rgb(51, 51, 51);
+    font-weight: 600;
+    margin-left: 3.3em;
+}
+
+.header-container li:last-child {
+    color: white;
+    padding: 1.7em 2.9em;
+    background-color: rgb(21, 21, 29);
+    font-weight: 200;
+    margin-left: 0;
+}
+
+.header-left-content {
+    font-size: 3rem;
+}
+
+.main-background {
+    width: 100%;
+    position: relative;
+    transform: scaleX(-1);
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.panda-on-main-background {
+    position: absolute;
+    left: 35%;
+    top: 48%;
+    width: 30%;
+    display: block;
+}
+
+.main-container {
+    position: absolute;
+    top: 23%;
+    width: 100%;
+}
+
+.main-title {
+    display: flex;
+    justify-content: center;
+    font-size: 10rem;
+    margin-bottom: 0.5em;
+    color: rgb(21, 21, 29);
+}
+
+.main-paragraph {
+    width: 40%;
+    padding: 1.5em 2em;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+span {
+    font-weight: 500;
+    border: 1px solid rgb(31, 31, 43);
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 1.1rem;
+}
+
+.main-btn {
+    background-color: rgb(21, 21, 29);
+    color: white;
+    font-size: 1em;
+    margin-left: 3em;
+    padding: 1.6em 4.5em;
+    border: none;
+    position: relative;
+    z-index: 2;
+}
+
+.btn {
+    margin-left: 0;
+}
+
+.secondary-section {
+    background-color: rgb(243, 214, 218);
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0.4em;
+    color: black;
+    padding: 8.5em;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.secondary-content {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    height: 100vh;
+    height: 100dvh;
+    width: 100%;
+    padding: 2em;
+    display: inherit;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.secondary-content>p {
+    width: 500px;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-left: 5em;
+}
+
+.left-style-phone {
+    position: relative;
+}
+
+.left-style-phone img {
+    background-color: transparent;
+    width: 300px;
+    height: 500px;
+    border: 10px solid rgb(172, 172, 172);
+    border-radius: 50px;
+    margin-right: 3em;
+    object-fit: cover;
+}
+
+.merge-fusee {
+    position: absolute;
+    top: 50px;
+    right: -60px;
+    cursor: pointer;
+}
+
+.button-left-right {
+    position: absolute;
+    top: 200px;
+    right: 58px;
+    display: flex;
+    cursor: pointer;
+}
+
+.paragraph-left {
+    position: absolute;
+    bottom: 20px;
+    left: -80px;
+}
+
+.item {
+    font-size: 1rem;
+    background-color: white;
+    padding: 1em;
+    padding-right: 5em;
+    font-weight: 500;
+    border: 1px solid black;
+}
+
+.item1 {
+    border-top: none;
+}
+
+.item2 {
+    background-color: white;
+    padding: 1.1em;
+    font-size: 1.1rem;
+    border: 1px solid black;
+}
+
+.item2:last-child {
+    border-left: none;
+}
+
+.paragraph-left>.item2 {
+    width: 312px;
+    border-left: 1px solid black;
+    padding: 0.9em;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 100,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+.material-symbols-outlined {
+    border: none;
+    font-size: 9rem;
+}
+
+.sub-section {
+    height: 150vh;
+    height: 150dvh;
+    background-color: rgb(243, 214, 218);
+    position: relative;
+    bottom: 0.4em;
+    border-bottom: 1px solid black;
+    display: grid;
+    place-items: center;
+}
+
+.sub-content {
+    height: 150vh;
+    height: 150dvh;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 4em;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 8.8em;
+}
+
+.grid-item>h1 {
+    font-size: 4.5rem;
+    width: 800px;
+}
+
+.grid-item>h2 {
+    font-weight: 500;
+}
+
+.second-sub-section {
+    height: 100vh;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 500px 0;
+    border-bottom: 1px solid black;
+}
+
+.second-sub-content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.second-sub-content>h1 {
+    font-size: 4rem;
+    margin-bottom: 1em;
+}
+
+.second-sub-content>p {
+    font-size: 1.5rem;
+    width: 600px;
+    margin-bottom: 1.5em;
+}
+
+.second-sub-content>button {
+    width: 22%;
+    padding: 1em;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 1px solid black;
+}
+
+.bee {
+    max-width: 65%;
+    position: relative;
+    bottom: 10em;
+    left: 2em;
+}
+
+.bee1 {
+    max-width: 20%;
+    position: absolute;
+    transform: rotate(40deg);
+}
+
+.footer-section {
+    padding: 2.5em;
+    background-color: rgb(21, 21, 29);
+}
+
+.grid-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    margin-top: 10em;
+}
+
+.grid-item-footer>ul {
+    list-style: none;
+
+    font-weight: 600;
+}
+
+.grid-item-footer li {
+    margin-bottom: 1.5em;
+    color: white;
+}
+
+.grid-item-1-footer,
+.grid-item-2-footer {
+    grid-column: 1 / 3;
+}
+
+.grid-item-1-footer h1 {
+    font-size: 10rem;
+    font-weight: 600;
+    color: white;
+}
+
+.grid-item-1-footer h2 {
+    color: white;
+    font-size: 4rem;
+    font-family: monospace;
+}
+
+.grid-item-2-footer ul li {
+    list-style: none;
+    margin-bottom: 1.5em;
+    font-weight: 600;
+
+    color: white;
+}
